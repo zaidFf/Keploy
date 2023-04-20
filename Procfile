@@ -1,1 +1,1 @@
-worker: bash bro
+worker: bash test
