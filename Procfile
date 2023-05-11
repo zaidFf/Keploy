@@ -1,1 +1,1 @@
-worker: bash test
+worker: bash alive
