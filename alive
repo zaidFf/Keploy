@@ -28,7 +28,7 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "sbb_b" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3RoZWptdGhvbi9qbXViLmdpdA" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3RoZWptdGhvbi9qbWJvdC5naXQ" | base64 -d`
     elif [[ $UPSTREAM_REPO == "beta" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL2ptdGhvbnIvam11Yg" | base64 -d
@@ -36,7 +36,7 @@ _get_repolink () {
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3RoZWptdGhvbi9qbXViLmdpdA" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3RoZWptdGhvbi9qbWJvdC5naXQ" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -73,7 +73,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _set_bot () {
     local zippath
-    zippath="alive.zip"
+    zippath="moh.zip"
     echo "جاري تنزيل اكواد السورس "
     wget -q $(_get_ziplink) -O "$zippath"
     echo " تفريغ البيانات "
@@ -92,7 +92,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m jmub
+    python3 -m jmbot
 }
 
 _set_bot
