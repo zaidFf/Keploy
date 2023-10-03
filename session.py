@@ -15,8 +15,7 @@ async def main():
             f"`{await app.export_session_string()}`"
         )
         print(
-            "تم بنجاح أستخراج كود سيشن البايروجرام"
-            "ستجد الكود في الرسائل المحفوظة في التليجرام"
+            "DONE DONE !!!!!!!!!!!!"
         )
 
 if __name__ == "__main__":

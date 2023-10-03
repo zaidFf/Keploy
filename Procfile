@@ -1,1 +1,1 @@
-worker: bash bruh
+worker: bash stroh
