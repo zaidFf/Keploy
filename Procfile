@@ -1,1 +1,1 @@
-worker: bash stroh
+worker: bash imgood
