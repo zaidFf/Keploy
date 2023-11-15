@@ -1,1 +1,1 @@
-worker: bash imgood
+worker: bash imsad
